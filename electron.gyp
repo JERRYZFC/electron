@@ -218,6 +218,16 @@
             },
           ],
         }],  # OS=="linux"
+        ['target_arch=="mips64el"', {
+          'copies': [
+            {
+              'destination': '<(PRODUCT_DIR)',
+              'files': [
+                '<(libchromiumcontent_dir)/libchromium_sqlite3.so',
+              ],
+            },
+          ],
+        }],  # target_arch=="mips64el"
       ],
     },  # target <(project_name)
     {
